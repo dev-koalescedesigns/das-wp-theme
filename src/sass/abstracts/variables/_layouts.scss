@@ -1,0 +1,104 @@
+@import "abstracts/mixins/mixins";
+
+.site-main {
+	position: relative;
+	z-index: 0;
+  	padding-top: 60px;
+}
+
+/* -- Front Page --*/
+.front-page {
+
+	.home-pg.hero {
+		.content {
+			width: 40%;
+				h1 {
+				color: $color__white;
+				}
+		}
+	}//.home-pg.hero
+
+	.site-device-filter {
+		padding: 20px;
+
+			ul {
+
+					li {
+						margin: 20px 0;
+						@include flexbox();
+						border-bottom: 1px solid;
+
+							.content {
+							margin-left: 10px;
+							font-size: small;
+
+								span {
+								font-weight: 600;
+								}
+							}
+					}
+
+					li:first-child {
+						margin-top: 0 !important;
+					}
+
+					li:last-child {
+						border-bottom: none;
+					}
+			}
+	}//.site-device-filter
+
+	[class^="content-"] {
+		padding: 42px;
+  
+		  .section-title-wrapper {
+			  height: 100px;
+			  margin: 0 auto;
+			  text-align: center;
+  
+				  h2 {
+					  font-weight: 700;
+					  font-size: 30px;
+				  }
+  
+				  h3 {
+					  font-size: 22px;
+					  font-weight: 100;
+				  }
+  
+				  h3::after {
+					  display: block;
+					  background-color: #05b2c2;
+					  width: 120px;
+					  height: 3px;
+					  content: '\0020';
+					  position: absolute;
+					  left: 50%;
+					  margin-top: 10px;
+					  margin-left: -60px;
+				  }
+		  }    
+  
+		  .tile.is-ancestor {
+			  padding: 30px;
+  
+			  .tile.is-parent {
+				  border: 1px solid;
+				  margin-right: 40px;
+  
+					  p.title {
+						  margin: 0 auto;
+						  padding: 20px 0;
+						  text-align: center;
+					  }
+			  }
+  
+			  .tile.is-parent:last-child {
+				  margin-right: 0px;
+			  }
+		  }
+  
+	  }
+
+}
+

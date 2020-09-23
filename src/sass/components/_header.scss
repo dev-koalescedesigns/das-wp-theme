@@ -1,0 +1,42 @@
+@import "abstracts/mixins/mixins";
+
+.site-header {
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  height: 60px;
+  line-height: 30px;
+  padding: 0 42px;
+  @include flexbox();
+  background: darken($color: $color__white, $amount: 0%);
+  color: $color__blackish;
+
+  -webkit-box-shadow: 0 6px 6px -6px $color__dim-grey;
+	   -moz-box-shadow: 0 6px 6px -6px $color__dim-grey;
+	        box-shadow: 0 6px 6px -6px $color__dim-grey;
+
+    a {
+        color: $color__blackish;
+    }
+
+    .site-branding {
+        @include flex-grow(1);
+    }
+
+    .main-navigation {
+        @include flex-grow(3);
+            ul {
+            @include flexbox();
+            }
+    }
+
+    .site-right {
+        @include flexbox();
+        @include flex-direction(row-reverse);
+        @include justify-content(space-evenly);
+        @include flex-grow(1);
+        padding-top: 10px;
+    }
+}
+
+

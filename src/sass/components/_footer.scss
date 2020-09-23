@@ -1,0 +1,40 @@
+
+.site-footer {
+    background: darken($color: $color__evening-blue, $amount: 0%);
+    color: lighten($color: $color__marigold, $amount: 20%);
+
+    a {
+        color: lighten($color: $color__marigold, $amount: 20%);
+        font-weight: 700;
+    }
+
+    a:hover {
+        color: lighten($color: $color__marigold, $amount: 40%);
+        text-decoration: underline;
+    }
+
+    .site-info {
+        @include flexbox();
+        min-height: 100px;
+        padding: 35px 42px;
+    }//.site-info
+
+    .site-legal-info {
+        @include flexbox();
+        height: 50px;
+        padding: 10px 42px 20px 42px;
+        line-height: 30px;
+        font-size: small;
+
+            ul {
+                @include flexbox();
+
+                    li {
+                        padding-right: 20px; 
+                        text-transform: uppercase;
+
+                    }
+            }
+    }//.site-legal-info
+
+} //.site-footer

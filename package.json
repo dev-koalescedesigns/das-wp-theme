@@ -1,0 +1,35 @@
+{
+  "name": "das-theme",
+  "version": "3.0.0",
+  "description": "WordPress theme for diversityavatarstickers.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "/"
+  ],
+  "license": "ISC",
+  "author": "Koalesce Designs",
+  "devDependencies": {
+    "browser-sync": "^2.26.12",
+    "bulma": "^0.9.0",
+    "bulma-extensions": "^6.2.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-cache": "^1.1.3",
+    "gulp-change": "^1.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-if": "^3.0.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-line-ending-corrector": "^1.0.3",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-terser": "^1.4.0",
+    "gulp-uglify": "^3.0.2",
+    "webpack-stream": "^6.1.0",
+    "yargs": "^16.0.3"
+  }
+}
