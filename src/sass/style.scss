@@ -1,5 +1,5 @@
 /*!
-Theme Name: das
+Theme Name: das2021
 Theme URI: http://koalescedesigns.com
 Author: Koalesce Designs
 Author URI: https://koalescedesigns.com
@@ -29,6 +29,10 @@ Text Domain: das2021
 @import "../../node_modules/bulma/bulma.sass";
 @import "../../node_modules/bulma-extensions/bulma-steps/src/sass/index.sass";
 
+/*--------------------------------------------------------------
+# Woocommerce
+--------------------------------------------------------------*/
+@import "../sass/woocommerce/products";
 
 /*--------------------------------------------------------------
 # Base
@@ -44,7 +48,6 @@ Text Domain: das2021
 @import "components/navigation";
 @import "components/header";
 @import "components/footer";
-
 
 /*--------------------------------------------------------------
 # Utilities

@@ -242,6 +242,32 @@ function my_login_page( $login_url, $redirect, $force_reauth ) {
 }
 
 /**
+ * Change Select Options
+ */
+function change_select_option($text) {
+	global $product;
+	$product_type = $product->product_type;
+	switch ( $product_type ) {
+	  case 'external':
+		return __( 'Buy product', 'woocommerce' );
+	  break;
+	  case 'grouped':
+		return __( 'View products', 'woocommerce' );
+	  break;
+	  case 'simple':
+		return __( 'Add to cart', 'woocommerce' );
+	  break;
+	  case 'variable':
+		return __( 'Click to Order', 'woocommerce' );
+	  break;
+	  default:
+		return __( 'Read more', 'woocommerce' );
+	} 
+  }
+  add_filter( 'woocommerce_product_add_to_cart_text' , 'change_select_option' );
+
+
+/**
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';
@@ -271,5 +297,5 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 /**
  * Load mega menu compatibility file.
  */
-require_once get_template_directory() . '/inc/megamenu.php';
+//require_once get_template_directory() . '/inc/megamenu.php';
 

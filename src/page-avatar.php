@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Avatar Cat
+ * Template Name: Avatar Category
  * description: Avatar category page
  * Page template without sidebar
  *

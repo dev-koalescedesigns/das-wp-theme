@@ -1,10 +1,8 @@
 <?php
 /**
- * Single Product Share
+ * Single Product Price
  *
- * Sharing plugins can hook into here or you can add your own code directly.
- *
- * This template can be overridden by copying it to yourtheme/woocommerce/single-product/share.php.
+ * This template can be overridden by copying it to yourtheme/woocommerce/single-product/price.php.
  *
  * HOWEVER, on occasion WooCommerce will need to update template files and you
  * (the theme developer) will need to copy the new files to your theme to
@@ -14,13 +12,14 @@
  *
  * @see     https://docs.woocommerce.com/document/template-structure/
  * @package WooCommerce\Templates
- * @version 3.5.0
+ * @version 3.0.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly.
+	exit; // Exit if accessed directly
 }
 
-do_action( 'woocommerce_share' ); // Sharing plugins can hook into here.
+global $product;
 
-/* Omit closing PHP tag at the end of PHP files to avoid "headers already sent" issues. */
+?>
+<p class="<?php echo esc_attr( apply_filters( 'woocommerce_product_price_class', 'price' ) ); ?>"><?php echo $product->get_price_html(); ?></p>

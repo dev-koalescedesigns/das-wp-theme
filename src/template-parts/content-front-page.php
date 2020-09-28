@@ -104,11 +104,20 @@
 
 	<div class="entry-content">
 
-		<!-- [why we are unique] -->
+		<!-- getting started -->
+		<div class="content-unique">
+			<div class="section-title-wrapper">
+				<h2>LET US HELP YOU GET STARTED</h2>
+				<h3 class="sub-title">Customize your DAS - Purchase your DAS - Enjoy your DAS</h3>
+			</div>
+		</div>
+		<!-- // getting started -->
+
+		<!-- why we are unique -->
 		<div class="content-unique">
 			<div class="section-title-wrapper">
 				<h2>WE ARE UNIQUE</h2>
-				<h3 class="sub-title">We create products for the human experience. Representation does matter. <button class="button is-black">Black Lives Matter</button> </h3>
+				<h3 class="sub-title">We create products for the human experience. Representation DOES matter. <button class="button is-black">Black Lives Matter</button> </h3>
 			</div>
 
 			<div class="tile is-ancestor">
@@ -132,47 +141,8 @@
 			</div>
 			
 		</div>
-	<!-- //[why we are unique] -->
+	<!-- // Why we are unique -->
 
-	<!-- [steps] -->
-	<div class="content-steps">
-		<ul class="steps has-content-above">
-          <li class="steps-segment">
-            <span class="steps-marker"></span>
-            <div class="steps-content is-divider-content">
-              <p class="is-size-4">Step 1</p>
-            </div>
-          </li>
-          <li class="steps-segment">
-            <span class="steps-marker"></span>
-            <div class="steps-content is-divider-content">
-              <p class="is-size-4">Step 2</p>
-            </div>
-          </li>
-          <li class="steps-segment is-active">
-            <span class="steps-marker"></span>
-            <div class="steps-content is-divider-content">
-              <p class="is-size-4">Step 3</p>
-            </div>
-          </li>
-          <li class="steps-segment">
-            <span class="steps-marker"></span>
-            <div class="steps-content is-divider-content">
-              <p class="is-size-4">Step 4</p>
-            </div>
-          </li>
-          <li class="steps-segment">
-            <span class="steps-marker"></span>
-            <div class="steps-content is-divider-content">
-              <p class="is-size-4">Step 5</p>
-            </div>
-          </li>
-          <li class="steps-segment">
-            <span class="steps-marker"></span>
-          </li>
-		</ul>
-	</div>
-	<!-- //[steps] -->
 
 	</div><!-- .entry-content -->
 

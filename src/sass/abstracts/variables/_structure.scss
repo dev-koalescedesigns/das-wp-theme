@@ -1,2 +1,94 @@
+@import "abstracts/variables/colors";
+
 $size__site-main: 100%;
 $size__site-sidebar: 25%;
+
+html, body {
+    height: $size__site-main;
+  }
+  body {
+    @include flexbox();
+    @include flex-direction(column);
+    min-height: 100vh;
+    background: $color__background-body;
+  }
+
+  iframe {
+	  width: 100%;
+  }
+
+  .content figure {
+    margin-left: 0;
+	margin-right: 20;
+  }
+
+  .site-content {
+    flex: 1 0 auto;
+    padding: 50px 0 0 0;
+    background: $color__background-body;
+  }
+
+  .more-link {
+	  float: right;
+  }
+
+  dt {
+	  font-weight: 800;
+  }
+
+  aside {
+	
+	.widget {
+		position: relative;
+		padding: 1.25rem 1.25rem;
+		margin-bottom: 20px;
+
+			ul {
+				list-style: none;
+				padding-left: 0;
+				margin-left: 0;
+			}
+
+			a {
+				//color: #7FD1AE;
+			}
+
+			h2 {
+				text-align: center;
+				font-size: 1.70em;
+			}
+
+			.widget-title {
+				font-size: 1.70em;
+				text-align: center;
+			}
+
+			img {
+				text-align: center;
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+	}
+  }
+
+  .widget_text iframe {
+	  width: 100%;
+	  max-height: 100%;
+	  min-height: 260px;
+  }
+
+ .notification {
+	position: relative;
+    top: 60px;
+    margin: 0px 32px 20px 32px;
+    text-align: center;
+ }
+
+ .grv-widget-tag-bottom-right {
+	right: 38px !important;
+ }
+
+  @import "components/footer";
+
+

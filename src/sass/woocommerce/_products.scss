@@ -1,0 +1,29 @@
+
+.product-category {
+    @include flexbox();
+    @include flex-direction(row-reverse);
+    @include justify-content(space-evenly);
+
+        img {
+            width: 80px;
+            height: 80px;
+        }
+
+        .woocommerce-loop-category__title {}
+}
+
+.woocommerce a.added_to_cart {
+	position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+    background: green;
+    text-align: center;
+    padding: 10px;
+}
+
+/* -- Check mark in the add to cart button -- */
+.woocommerce a.button.added::after {}
+
+/* -- Onsale badge -- */
+.woocommerce ul.products li.product .onsale {}

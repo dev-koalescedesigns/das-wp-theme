@@ -35,7 +35,19 @@
         @include flex-direction(row-reverse);
         @include justify-content(space-evenly);
         @include flex-grow(1);
-        padding-top: 10px;
+
+            .cart-container {
+                width: 100px;
+                background: $color__bright-coral;
+
+                    .das-cart-icon {
+                        @include flexbox();
+                        @include flex-direction(row);
+                        @include justify-content(space-evenly);
+                        line-height: 60px;
+                    }
+
+            }
     }
 }
 

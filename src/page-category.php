@@ -1,7 +1,7 @@
 <?php
 /**
- * Template Name: Avatar Category
- * description: Avatar category page
+ * Template Name: Category Page
+ * description: Category page
  * Page template without sidebar
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
@@ -18,7 +18,7 @@ get_header();
 			while ( have_posts() ) :
 				the_post();
 
-				get_template_part( 'template-parts/content', 'avatar-cat-pg' );
+				get_template_part( 'template-parts/content', 'cat-pg' );
 
 			endwhile; // End of the loop.
 		?>

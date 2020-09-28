@@ -49,8 +49,10 @@
 			<?php
 			wp_nav_menu(
 				array(
-					'theme_location' => 'main-menu',
-					'menu_id'        => 'primary-menu',
+					'theme_location' 	=> 'main-menu',
+					'menu_id'        	=> 'mega-menu',
+					'depth'             => "0", // (int) How many levels of the hierarchy are to be included. 0 means all. Default 0.
+					//'walker'			=> new megaMenu(), // (object) Instance of a custom walker class.
 				)
 			);
 			?>
@@ -58,6 +60,17 @@
 
 		<div class="site-right">
 			<div class="signin"><button class="button is-primary">Sign-in</button></div>
-			<div class="cart"><button class="button is-primary">Cart</button></div>
+			<div class="cart-container">
+				<a class="cart-customlocation" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>">
+						<div class="das-cart-icon">
+							<figure class="wp-block-image size-small is-resized">
+								<img src="https://diversityavatarstickers.com/wp-content/uploads/2020/01/cart-icon-white.svg" alt="" class="cart-icon" width="20" height="20">
+							</figure>
+							<span>
+								<?php echo sprintf ( _n( '%d', '%d', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?>
+							</span>	
+						</div>
+					</a>
+			</div>
 		</div>
 	</header><!-- #masthead -->
